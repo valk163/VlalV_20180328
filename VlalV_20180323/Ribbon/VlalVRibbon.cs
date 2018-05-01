@@ -16,9 +16,9 @@ namespace VlalV_20180323.Ribbon
         private void button1_Click(object sender, RibbonControlEventArgs e)
         {
             //vlal20180323: Part2
-            //Globals.ThisAddIn.TaskPane.Visible = true;
+            Globals.ThisAddIn.TaskPane.Visible = true;
 
-            //vlal20180323: Part2 custom take on the button
+            /*vlal20180323: Part2 custom take on the button
             if (Globals.ThisAddIn.TaskPane.Visible == false)
             {
                 Globals.ThisAddIn.TaskPane.Visible = true;
@@ -29,6 +29,7 @@ namespace VlalV_20180323.Ribbon
                 Globals.ThisAddIn.TaskPane.Visible = false;
                 this.button1.Label = "Show Task Panel";
             }
+            */
         }
     }
 }

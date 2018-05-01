@@ -25,6 +25,10 @@ namespace VlalV_20180323
             var taskPaneView = new TaskPaneView();
             this.taskPane = this.CustomTaskPanes.Add(taskPaneView, "VlalV");
             this.taskPane.Visible = false;
+
+            var vlalViewModel = new VlalVViewModel();
+            var vlalView = taskPaneView.VlalVView;
+            vlalView.DataContext = vlalViewModel;
         }
 
         private void ThisAddIn_Shutdown(object sender, System.EventArgs e)

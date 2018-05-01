@@ -17,12 +17,24 @@ namespace VlalV_20180323.TaskPane
             InitializeComponent();
         }
 
+        internal VlalVView VlalVView
+        {
+            get
+            {
+                return this.vlalVView1;
+            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             //vlal20180323: Part2
             var timeNow = DateTime.Now.ToLongTimeString();
             var dateNow = DateTime.Now.ToLongDateString();
             this.label1.Text = dateNow+"@"+timeNow;
+        }
+
+        private void TaskPaneView_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
